@@ -7,7 +7,12 @@ const fs = require('fs');
 
 const data = fs.readFileSync('./riches.txt');
 
+let counter = 1;
+
 function generate() {
+
+    counter = counter + 1;
+
     // generate random private key hex
     let privateKeyHex = r(64);
     
@@ -17,6 +22,7 @@ function generate() {
     ck.compressed = false;
     //console.log(ck.publicAddress)
     // Remove "//" in line above if you wanna see the logs, but remember it's gonna slow down the process a lot
+    console.log(counter);
     
     // if generated wallet matches any from the riches.txt file, tell us we won!
     if(data.includes(ck.publicAddress)){
