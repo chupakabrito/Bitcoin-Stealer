@@ -9,7 +9,7 @@ const data = fs.readFileSync('./riches.txt');
 
 let counter = 1;
 
-function generate() {
+function generate() {                                                        
 
     counter = counter + 1;
 
