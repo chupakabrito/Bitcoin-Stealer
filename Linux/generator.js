@@ -20,9 +20,9 @@ function generate() {
     let ck = new CoinKey(Buffer.from(privateKeyHex, 'hex'));
     
     ck.compressed = false;
-    
-    console.log(ck.publicAddress)
-    console.log(ck.privateWif);
+
+    // console.log(ck.publicAddress)
+    // console.log(ck.privateWif);
     console.log(counter);
     // Remove "//" in line above if you wanna see the logs, but remember it's gonna slow down the process a lot
     
